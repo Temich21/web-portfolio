@@ -1,0 +1,144 @@
+@import "../../styles/styles.scss";
+
+.skills {
+    min-height: auto;
+    padding: 5rem 9% 10rem;
+    background: $secondBgColor;
+
+    @media (max-width: 462px) {
+        padding-bottom: 5rem;
+    }
+
+    .heading {
+        position: relative;
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        .animate {
+            @extend %animation;
+            --i: 1;
+            transition: 1s ease;
+            transition-delay: calc(.3s / var(--i));
+            background: $secondBgColor;
+        }
+
+        .animate.showAnimate {
+            transition-delay: calc(.3s / var(--i));
+            width: 0;
+        }
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+    .skillsTable {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto-fill;
+        grid-gap: 5rem;
+
+        @media (max-width: 620px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto-fill;
+        }
+
+        .skillsRow {
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: space-around;
+            gap: 5rem;
+
+            @media (max-width: 620px) {
+                flex-direction: column;
+            }
+
+            @media (max-width: 1200px) {
+                grid-column: 1 / 3;
+                justify-content: space-between;
+            }
+
+            .skill {
+                max-width: 50rem;
+
+                @media (max-width: 1200px) {
+                    max-width: 55rem;
+                    flex: 1;
+                }
+            }
+        }
+
+        .skill {
+            position: relative;
+            border-radius: .6rem;
+            padding: .5rem 1.5rem;
+            z-index: 1;
+            overflow: hidden;
+
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            .iconBox {
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+
+                .jestImage {
+                    width: 70px;
+                    height: 80px;
+                }
+
+                .icon {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: $bgColor;
+                z-index: -1;
+                transition: .5s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            .animate {
+                @extend %animation;
+                --i: 2;
+                transition: 1s ease;
+                transition-delay: calc(.3s / var(--i));
+                background: $secondBgColor;
+            }
+
+            .animate.showAnimate {
+                transition-delay: calc(.3s / var(--i));
+                width: 0;
+            }
+        }
+
+        .skill.showAnimate {
+            border: .2rem solid $mainColor;
+            transition: 1s ease;
+        }
+    }
+}
