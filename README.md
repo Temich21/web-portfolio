@@ -9,3 +9,4 @@ The Portfolio Website project represents a significant milestone in my journey a
 - **Contact Information:** To foster collaboration and communication, I've included a contact section that allows visitors to get in touch with me easily. Whether it's for project inquiries, networking opportunities, or simply to say hello, I welcome and encourage interaction. <br/>
 <br/>
 The Portfolio Website project is not just a static webpage but a dynamic representation of my skills, experiences, and ongoing growth as a frontend developer. It reflects my commitment to creating user-friendly, visually appealing, and technically proficient web solutions. It also serves as a testament to my dedication to continuous learning and improvement in this ever-evolving field.
+
