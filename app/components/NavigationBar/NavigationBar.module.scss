@@ -27,51 +27,80 @@
         }
     }
 
-    .menuIcon {
-        position: relative;
-        font-size: 3.6rem;
-        color: $textColor;
-        cursor: pointer;
-        display: none;
-
-        .animate {
-            @extend %animation;
-            --i: 2;
-            animation: showRight 1s ease forwards;
-            animation-delay: calc(.3s * var(--i));
-        }
-    }
-
-    .navbar {
-        position: relative;
+    .navigation {
         display: flex;
-        list-style-type: none;
 
+        .menuAndLanguage {
+            display: flex;
+            gap: 2rem;
 
-        .link {
-            font-size: 1.7rem;
-            color: $textColor;
-            font-weight: 500;
-            margin-left: 3.5rem;
-            transition: .3s;
-            cursor: pointer;
+            .languages {
+                .languagesSelector {
+                    height: 100%;
+                    font-size: 1.7rem;
+                    color: $textColor;
+                    background: $bgColor;
+                    border: .2rem solid $mainColor;
+                    border-radius: .6rem;
+                }
 
-            &:hover {
-                color: $mainColor;
+                .animate {
+                    @extend %animation;
+                    --i: 2;
+                    animation: showRight 1s ease forwards;
+                    animation-delay: calc(.3s * var(--i));
+                }
+            }
+
+            .menuIcon {
+                position: relative;
+                font-size: 3.6rem;
+                color: $textColor;
+                cursor: pointer;
+                display: none;
+
+                .animate {
+                    @extend %animation;
+                    --i: 2;
+                    animation: showRight 1s ease forwards;
+                    animation-delay: calc(.3s * var(--i));
+                }
             }
         }
 
-        .active {
-            color: $mainColor;
-        }
+        .navbar {
+            position: relative;
+            display: flex;
+            list-style-type: none;
 
-        .animate {
-            @extend %animation;
-            --i: 2;
-            animation: showRight 1s ease forwards;
-            animation-delay: calc(.3s * var(--i));
+
+            .link {
+                font-size: 1.7rem;
+                color: $textColor;
+                font-weight: 500;
+                margin-left: 3.5rem;
+                transition: .3s;
+                cursor: pointer;
+
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+
+            .active {
+                color: $mainColor;
+            }
+
+            .animate {
+                @extend %animation;
+                --i: 2;
+                animation: showRight 1s ease forwards;
+                animation-delay: calc(.3s * var(--i));
+            }
         }
     }
+
+
 }
 
 @media (max-width: 991px) {
@@ -88,62 +117,70 @@
             width: 100%;
         }
 
-        .menuIcon {
-            display: flex;
-            justify-content: flex-end
-        }
 
-        .navbar {
+
+        .navigation {
             display: block;
-            position: absolute;
-            top: 100%;
-            left: -100%;
-            width: 100%;
-            padding: 1rem 4%;
-            background: $mainColor;
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-            z-index: 1;
-            transition: .25s ease;
-            transition-delay: .25s;
 
-            li {
-
-                .link {
-                    display: block;
-                    font-size: 2rem;
-                    margin: 3rem 0;
-                    transform: translateX(-20rem);
-                    transition: .25s ease;
-                    transition-delay: 0;
+            .menuAndLanguage {
+                .menuIcon {
+                    display: flex;
+                    justify-content: flex-end
                 }
             }
 
-            .activeNav {
+            .navbar {
+                display: block;
                 position: absolute;
-                top: 0;
+                top: 100%;
                 left: -100%;
                 width: 100%;
-                height: 100%;
-                background: $bgColor;
-                border-top: .1rem solid rgba(0, 0, 0, .2);
-                z-index: -1;
+                padding: 1rem 4%;
+                background: $mainColor;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+                z-index: 1;
                 transition: .25s ease;
-                transition-delay: 0s;
-            }
-        }
-
-        .navbar.toogle {
-            left: 0;
-            transition-delay: 0s;
-
-            .link {
-                transform: translateX(0);
                 transition-delay: .25s;
+
+                li {
+
+                    .link {
+                        display: block;
+                        font-size: 2rem;
+                        margin: 3rem 0;
+                        transform: translateX(-20rem);
+                        transition: .25s ease;
+                        transition-delay: 0;
+                    }
+                }
+
+                .activeNav {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: $bgColor;
+                    border-top: .1rem solid rgba(0, 0, 0, .2);
+                    z-index: -1;
+                    transition: .25s ease;
+                    transition-delay: 0s;
+                }
             }
 
-            .activeNav {
+            .navbar.toogle {
                 left: 0;
-                transition-delay: .25s;
+                transition-delay: 0s;
+
+                .link {
+                    transform: translateX(0);
+                    transition-delay: .25s;
+                }
+
+                .activeNav {
+                    left: 0;
+                    transition-delay: .25s;
+                }
             }
         }
     }

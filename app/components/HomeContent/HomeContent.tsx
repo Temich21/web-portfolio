@@ -4,7 +4,7 @@ import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-sv
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { useContext } from 'react'
 import { ActivePathContext } from '../../context/ActivePath'
-import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl'
 
 export const HomeContent: React.FC = () => {
     const { activePath } = useContext(ActivePathContext)
@@ -18,7 +18,7 @@ export const HomeContent: React.FC = () => {
                     <h3 className={`${styles.animate} ${activePath === 'home' ? styles.showAnimate : ''}`}>Frontend Developer</h3>
                     <span className={`${styles.animate} ${activePath === 'home' ? styles.showAnimate : ''}`} ></span>
                 </div>
-                <p>A mechanical designer with a newfound passion for frontend development. Feel free to explore my journey, including education, work, projects, and thesis, along with my acquired skills. Don&rsquo;t hesitate to reach out via the contact section. Let&rsquo;s collaborate and create something amazing together.<span className={`${styles.animate} ${activePath === 'home' ? styles.showAnimate : ''}`} ></span></p>
+                <p>{t('description')}<span className={`${styles.animate} ${activePath === 'home' ? styles.showAnimate : ''}`} ></span></p>
             </div>
             <div className={styles.homeSci}>
                 <div className={styles.circle}>

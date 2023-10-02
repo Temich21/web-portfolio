@@ -8,11 +8,33 @@ import { faCircleArrowRight, faCircleArrowLeft } from '../../../node_modules/@fo
 import { useContext, useRef } from 'react'
 import styled from 'styled-components'
 import { ActivePathContext } from '../../context/ActivePath'
-import { projects } from '../../costants/projects'
+import { projectsEN, projectsCZ, projectsRU } from '../../costants/projects'
+import { IProjects } from '../../models/IProjects'
+import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 
 export const Projects = () => {
     const { activePath } = useContext(ActivePathContext)
     const arrowRef = useRef<RefObject>(null)
+    const t = useTranslations('Projects')
+    const locale = useLocale()
+
+    let projects: IProjects[] = [], Link: string = ''
+
+    switch (locale) {
+        case 'en':
+            projects = projectsEN
+            Link = 'Link'
+            break;
+        case 'cz':
+            projects = projectsCZ
+            Link = 'Odkaz'
+            break;
+        case 'ru':
+            projects = projectsRU
+            Link = 'Ссылка'
+            break;
+    }
 
     const settings = {
         dots: true,
@@ -51,14 +73,14 @@ export const Projects = () => {
 
     return (
         <div className={styles.projects} >
-            <h3 className={styles.title}>Projects</h3>
+            <h3 className={styles.title}>{t('title')}</h3>
             <Container>
                 <Slider ref={arrowRef} {...settings}>
                     {projects.map(({ id, title, description, link }) => (
                         <Card key={id}>
                             <h3>{title}</h3>
                             <p>{description}</p>
-                            <p><a href={link}><b>Link</b></a></p>
+                            <p><a href={link}><b>{Link}</b></a></p>
                         </Card>
                     ))}
                 </Slider>

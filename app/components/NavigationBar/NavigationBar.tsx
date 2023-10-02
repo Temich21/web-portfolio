@@ -3,18 +3,24 @@
 import styles from './NavigationBar.module.scss'
 import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome/index'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useContext, useEffect, useRef, useState } from 'react'
+import { ChangeEvent, useContext, useEffect, useRef, useState } from 'react'
 import { ActivePathContext } from '../../context/ActivePath'
 import { INavigation } from '../../models/INavigation'
+import { useTranslations } from 'next-intl'
+import { useRouter } from 'next/navigation'
+import { useLocale } from 'next-intl'
 
 export const NavigationBar: React.FC = () => {
+    const t = useTranslations('Navigation')
+    const router = useRouter()
+    const locale = useLocale()
 
     const navigation: INavigation[] = [
-        { id: 1, title: 'Home', path: 'home' },
-        { id: 2, title: 'About', path: 'about' },
-        { id: 3, title: 'Education', path: 'education' },
-        { id: 4, title: 'Skills', path: 'skills' },
-        { id: 4, title: 'Contact', path: 'contact' }
+        { id: 1, title: t('home'), path: 'home' },
+        { id: 2, title: t('about'), path: 'about' },
+        { id: 3, title: t('education'), path: 'education' },
+        { id: 4, title: t('skills'), path: 'skills' },
+        { id: 4, title: t('contact'), path: 'contact' }
     ]
 
     const { setActivePath } = useContext(ActivePathContext)
@@ -77,14 +83,34 @@ export const NavigationBar: React.FC = () => {
         }
     }
 
+    const changeLanguage = (e: ChangeEvent<HTMLSelectElement>) => {
+        const localeValue = e.target.value
+        router.push(`/${localeValue}`)
+    };
+
     return (
         <header className={styles.header} ref={headerRef}>
             <a className={styles.logo}>My portfolio.<span className={styles.animate} ></span></a>
-            <div className={styles.menuIcon} onClick={() => setBurger(!burger)}>
-                {burger ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
-                <span className={styles.animate}></span>
-            </div>
-            <nav>
+            <nav className={styles.navigation}>
+                <div className={styles.menuAndLanguage}>
+                    <div className={styles.languages}>
+                        <select
+                            className={styles.languagesSelector}
+                            onChange={changeLanguage}
+                            defaultValue={locale}
+                        >
+                            <option value="en">EN</option>
+                            <option value="cz">CZ</option>
+                            <option value="ru">RU</option>
+                        </select>
+                        <span className={styles.animate} ></span>
+                    </div>
+                    <div className={styles.menuIcon} onClick={() => setBurger(!burger)}>
+                        {burger ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+                        <span className={styles.animate}></span>
+                    </div>
+                </div>
+
                 <ul className={`${styles.navbar} ${burger ? styles.toogle : ''}`}>
                     {navigation.map(({ id, title, path }) => (
                         <li key={id} >

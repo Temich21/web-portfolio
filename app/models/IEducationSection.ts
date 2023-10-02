@@ -2,6 +2,8 @@ export interface IEducation {
     id: number,
     title: string,
     years: string,
+    university: string,
+    faculty: string,
     programme: string
 }
 

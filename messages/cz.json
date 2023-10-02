@@ -1,6 +1,46 @@
 {
     "Home": {
         "greetings": "Ahoj, jsem",
-        "name": "Artem Rakhmatullin"
+        "name": "Artem Rakhmatullin",
+        "description": "Mechanický designér s nově objevenou vášní pro vývoj frontendu. Neváhejte a prozkoumejte mou cestu, včetně vzdělávání, práce a projektů, spolu s mými získanými dovednostmi. Neváhejte se ozvat přes sekci kontakt. Pojďme spolu spolupracovat a vytvořit něco úžasného."
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "O mně",
+        "education": "Vzdělání",
+        "skills": "Dovednosti",
+        "contact": "Kontakt"
+    },
+    "About": {
+        "title": "O",
+        "titleMe": "Mně",
+        "frontendDeveloper": "Frontend Vývojář!",
+        "aboutText": "Ahoj, jsem Artem Rakhmatullin, mechanický designér s vášní pro digitální svět. Jako člověk, který strávil roky vytvářením přesnosti ve fyzické oblasti, jsem se rozhodl vydat se na vzrušující cestu do sféry vývoje frontendu. Můj kariérní posun představuje spojení mé pečlivé pozornosti k detailům a nově objevené lásky ke kódování, designu a uživatelskému prostředí. Věřím, že dovednosti v mechanickém designu, jako je řešení problémů a smysl pro dokonalost, krásně doplňují svět vývoje webu. Od vytváření složitých CAD modelů až po vytváření elegantních webových rozhraní, nacházím radost v každém aspektu návrhu a vývoje. Moje portfolio je důkazem této cesty a představuje projekty, které překlenují propast mezi precizním inženýrstvím a dokonalým designem frontendu. Neváhejte a prozkoumejte mou práci, kde najdete mix kreativity a funkčnosti. Vítám příležitosti pro spolupráci a růst, pojďme se tedy společně propojit a utvářet digitální krajinu."
+    },
+    "Education": {
+        "titleMe": "Má",
+        "title": "Cesta",
+        "education": "Vzdělání",
+        "licenses": "Licence & certifikace & kurzy",
+        "experience": "Zkušenosti"
+    },
+    "Projects": {
+        "title": "Projekty"
+    },
+    "Skills": {
+        "titleMe": "Mé",
+        "title": "Schopnosti",
+        "git": "Naučte se používat Git, distribuovaný systém správy verzí, k efektivní správě úložišť kódu. Znalost postupů správy verzí, včetně větvení, slučování a řešení konfliktů. Zkušení ve spolupráci s týmy na projektech kódu, využívající Git ke sledování změn, udržování historie kódu a zajišťování integrity kódové základny.",
+        "jest": "Zkušený v testování aplikací React pomocí Jest, populárního testovacího rámce JavaScriptu. Zkušenosti s psaním jednotek a integračních testů pro zajištění spolehlivosti a udržovatelnosti kódu. Zkušenosti s používáním knihovny React Testing Library k provádění testování na úrovni komponent se zaměřením na interakce a chování uživatelů. Tyto testovací dovednosti přispívají k poskytování vysoce kvalitních aplikací bez chyb."
+    },
+    "Contact": {
+        "title": "Kontaktujte",
+        "titleMe": "Mě",
+        "name": "Jmeno",
+        "surname": "Příjmení",
+        "mobileNumber": "Telefonní číslo",
+        "email": "Email",
+        "yourMessage": "Vaše zpráva",
+        "button": "Odeslat"
     }
 }

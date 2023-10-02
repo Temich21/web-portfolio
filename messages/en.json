@@ -1,6 +1,46 @@
 {
     "Home": {
         "greetings": "Hi, I'm",
-        "name": "Artem Rakhmatullin"
+        "name": "Artem Rakhmatullin",
+        "description": "A mechanical designer with a newfound passion for frontend development. Feel free to explore my journey, including education, work and projects, along with my acquired skills. Don't hesitate to reach out via the contact section. Let's collaborate and create something amazing together."
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "education": "Education",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "About": {
+        "title": "About",
+        "titleMe": "Me",
+        "frontendDeveloper": "Frontend Developer!",
+        "aboutText": "Hi, I'm Artem Rakhmatullin, a mechanical designer with a burning passion for the digital world. As someone who has spent years crafting precision in the physical realm, I've decided to embark on an exciting journey into the realm of frontend development. My career shift represents a fusion of my meticulous attention to detail and a newfound love for coding, design, and user experiences. I believe that the skills homed in mechanical design, such as problem-solving and an eye for perfection, beautifully complement the world of web development. From creating intricate CAD models to crafting elegant web interfaces, I find joy in every aspect of design and development. My portfolio is a testament to this journey, showcasing projects that bridge the gap between precision engineering and pixel-perfect frontend design. Feel free to explore my work, where you'll find a mix of creativity and functionality. I welcome opportunities for collaboration and growth, so let's connect and shape the digital landscape together."
+    },
+    "Education": {
+        "titleMe": "My",
+        "title": "Journey",
+        "education": "Education",
+        "licenses": "Licenses & certifications & courses",
+        "experience": "Experience"
+    },
+    "Projects": {
+        "title": "Projects"
+    },
+    "Skills": {
+        "titleMe": "My",
+        "title": "Skills",
+        "git": "Adept in using Git, a distributed version control system, to manage code repositories efficiently. Proficient in version control practices, including branching, merging, and resolving conflicts. Skilled in collaborating with teams on code projects, utilizing Git to track changes, maintain code history, and ensure codebase integrity.",
+        "jest": "Proficient in testing React applications using Jest, a popular JavaScript testing framework. Experienced in writing unit and integration tests to ensure code reliability and maintainability. Skilled in using React Testing Library to perform component-level testing, focusing on user interactions and behaviors. These testing skills contribute to the delivery of high-quality, bug-free applications."
+    },
+    "Contact": {
+        "title": "Contact",
+        "titleMe": "Me",
+        "name": "Name",
+        "surname": "Surname",
+        "mobileNumber": "Mobile Number",
+        "email": "Email",
+        "yourMessage": "Your Message",
+        "button": "Submit"
     }
 }

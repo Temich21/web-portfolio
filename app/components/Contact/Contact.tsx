@@ -9,12 +9,14 @@ import styles from './Contact.module.scss'
 import { faFaceSmileWink, faFaceSadTear } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontawesome/index'
 import { IContact } from '../../models/IContact'
+import { useTranslations } from 'next-intl'
 
 export const Contact = () => {
     const [formSubmited, setFormSubmited] = useState(false)
     const [successfulSending, setSuccessfullSending] = useState(false)
     const { activePath } = useContext(ActivePathContext)
     const ref = collection(firestore, 'contacts')
+    const t = useTranslations('Contact')
 
     const submit = (values: IContact) => {
         const data = {
@@ -60,14 +62,14 @@ export const Contact = () => {
 
     return (
         <section className={styles.contact} id="contact">
-            <h2 className={styles.heading}>Contact <span>Me!</span><span className={`${styles.animate} ${activePath === 'contact' ? styles.showAnimate : ''}`} ></span></h2>
+            <h2 className={styles.heading}>{t('title')} <span>{t('titleMe')}!</span><span className={`${styles.animate} ${activePath === 'contact' ? styles.showAnimate : ''}`} ></span></h2>
             <form onSubmit={formik.handleSubmit}>
                 <div className={styles.inputBox}>
                     <div className={styles.inputField}>
                         <input
                             name='name'
                             type="text"
-                            placeholder='Name'
+                            placeholder={t('name')}
                             value={formik.values.name}
                             onChange={formik.handleChange}
                             required
@@ -79,7 +81,7 @@ export const Contact = () => {
                         <input
                             name='surname'
                             type="text"
-                            placeholder='Surname'
+                            placeholder={t('surname')}
                             value={formik.values.surname}
                             onChange={formik.handleChange}
                             required
@@ -94,7 +96,7 @@ export const Contact = () => {
                         <input
                             name='phoneNumber'
                             type="number"
-                            placeholder='Mobile Number'
+                            placeholder={t('mobileNumber')}
                             value={formik.values.phoneNumber}
                             onChange={formik.handleChange}
                             required
@@ -106,7 +108,7 @@ export const Contact = () => {
                         <input
                             name="email"
                             type="email"
-                            placeholder='Email'
+                            placeholder={t('email')}
                             value={formik.values.email}
                             onChange={formik.handleChange}
                             required />
@@ -122,7 +124,7 @@ export const Contact = () => {
                         rows={15}
                         value={formik.values.text}
                         onChange={formik.handleChange}
-                        placeholder="Your Message"
+                        placeholder={t('yourMessage')}
                         required
                     ></textarea>
                     <span className={styles.focus}></span>
@@ -130,7 +132,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={styles.btnBox}>
-                    <Button type="submit" >Submit</Button>
+                    <Button type="submit" >{t('button')}</Button>
                     <span className={`${styles.animate} ${activePath === 'contact' ? styles.showAnimate : ''}`} ></span>
                 </div>
             </form>
