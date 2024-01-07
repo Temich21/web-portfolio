@@ -30,8 +30,9 @@
     "Skills": {
         "titleMe": "Mé",
         "title": "Schopnosti",
-        "git": "Naučte se používat Git, distribuovaný systém správy verzí, k efektivní správě úložišť kódu. Znalost postupů správy verzí, včetně větvení, slučování a řešení konfliktů. Zkušení ve spolupráci s týmy na projektech kódu, využívající Git ke sledování změn, udržování historie kódu a zajišťování integrity kódové základny.",
-        "jest": "Zkušený v testování aplikací React pomocí Jest, populárního testovacího rámce JavaScriptu. Zkušenosti s psaním jednotek a integračních testů pro zajištění spolehlivosti a udržovatelnosti kódu. Zkušenosti s používáním knihovny React Testing Library k provádění testování na úrovni komponent se zaměřením na interakce a chování uživatelů. Tyto testovací dovednosti přispívají k poskytování vysoce kvalitních aplikací bez chyb."
+        "jest": "Zkušený v testování aplikací React pomocí Jest, populárního testovacího rámce JavaScriptu. Zkušenosti s psaním jednotek a integračních testů pro zajištění spolehlivosti a udržovatelnosti kódu. Zkušenosti s používáním knihovny React Testing Library k provádění testování na úrovni komponent se zaměřením na interakce a chování uživatelů. Tyto testovací dovednosti přispívají k poskytování vysoce kvalitních aplikací bez chyb.",
+        "redux": "Dovedný v používání Redux Toolkit, sadě nástrojů pro efektivní vývoj Redux. Zkušený ve zjednodušování vytváření aplikací Redux pomocí jeho utilit, které umožňují psát méně kódu při dosahování větší funkcionality.",
+        "query": "Znalosti v integraci RTK Query s Reactem pro zlepšení načítání a ukládání dat ve webových aplikacích. Dovednosti v používání RTK Query pro efektivní správu serverového stavu v aplikacích React, vedoucí ke snížení šablonového kódu a zvýšení výkonu. Zkušenosti ve vytváření robustních, daty řízených rozhraní s optimalizovanou synchronizací dat, zlepšující celkovou funkčnost a uživatelský zážitek z aplikací React."
     },
     "Contact": {
         "title": "Kontaktujte",

@@ -48,9 +48,16 @@ export const experienceEN: IExperience[] = [
     {
         id: 4,
         title: "Mechanical designer",
-        years: 'Jun 2021 - Present',
+        years: 'Jun 2021 - Dec 2023',
         company: 'IFE-CR',
-        description: "In my role as a Mechanical Designer at IFE-CR, I'm a key player in designing innovative product solutions and new models, with a specialization in door leaf design. Collaboration is at the heart of my work, as I engage with various departments and levels within the organization. Besides I&rsquo;m responsible for crafting comprehensive project documentation and implementing design changes to keep our projects adaptable. Additionally, I maintain and update technical documentation for both our customers and suppliers. Notably, my diploma work was conducted in collaboration with IFE - CR, further underscoring my dedication to the company's success."
+        description: "In my role was a Mechanical Designer at IFE-CR, I was a key player in designing innovative product solutions and new models, with a specialization in door leaf design. Collaboration was at the heart of my work, as I engaged with various departments and levels within the organization. Besides I was responsible for crafting comprehensive project documentation and implementing design changes to keep our projects adaptable. Additionally, I maintained and updated technical documentation for both our customers and suppliers. Notably, my diploma work was conducted in collaboration with IFE - CR, further underscoring my dedication to the company's success."
+    },
+    {
+        id: 5,
+        title: "Technical Support Engineer",
+        years: 'Jan 2024 - Present',
+        company: 'Oracle',
+        description: ""
     },
 ]
 
@@ -79,9 +86,16 @@ export const experienceCZ: IExperience[] = [
     {
         id: 4,
         title: "Mechanický konstruktér",
-        years: 'Červen 2021 - Současnost',
+        years: 'Červen 2021 - Prosinec 2023',
         company: 'IFE-CR',
-        description: "Ve své roli mechanického konstruktéra v IFE-CR jsem klíčovým hráčem při navrhování inovativních produktových řešení a nových modelů se specializací na design dveřních křídel. Spolupráce je jádrem mé práce, protože jsem v kontaktu s různými odděleními a úrovněmi v rámci organizace. Kromě toho zodpovídám za zpracování komplexní projektové dokumentace a implementaci změn designu, aby byly naše projekty přizpůsobivé. Kromě toho udržuji a aktualizuji technickou dokumentaci pro naše zákazníky i dodavatele. Zejména moje diplomová práce byla vedena ve spolupráci s IFE - ČR, což ještě více podtrhlo mou oddanost úspěchu společnosti."
+        description: "Ve své roli mechanického konstruktéra v IFE-CR byl jsem klíčovým hráčem při navrhování inovativních produktových řešení a nových modelů se specializací na design dveřních křídel. Spolupráce byla jádrem mé práce, protože jsem byl v kontaktu s různými odděleními a úrovněmi v rámci organizace. Kromě toho jsem zodpovídal za zpracování komplexní projektové dokumentace a implementaci změn designu, aby byly naše projekty přizpůsobivé. Kromě toho jsem udržoval a aktualizoval technickou dokumentaci pro naše zákazníky i dodavatele. Zejména moje diplomová práce byla vedena ve spolupráci s IFE - ČR, což ještě více podtrhlo mou oddanost úspěchu společnosti."
+    },
+    {
+        id: 5,
+        title: "Technical Support Engineer",
+        years: 'Leden 2024 - Současnost',
+        company: 'Oracle',
+        description: ""
     },
 ]
 
@@ -110,8 +124,15 @@ export const experienceRU: IExperience[] = [
     {
         id: 4,
         title: "Механический конструктор",
-        years: 'Июнь 2021 - В настоящее время',
+        years: 'Июнь 2021 - Дек 2023',
         company: 'IFE-CR',
-        description: "В должности конструктора-механика в IFE-CR я играю ключевую роль в разработке инновационных продуктовых решений и новых моделей, специализируясь на дизайне дверных полотен. Сотрудничество лежит в основе моей работы, поскольку я взаимодействую с различными отделами и уровнями внутри организации. Кроме того, я отвечаю за разработку комплексной проектной документации и внесение изменений в дизайн, чтобы наши проекты были адаптируемыми. Кроме того, я веду и обновляю техническую документацию как для наших клиентов, так и для поставщиков. Примечательно, что моя дипломная работа проводилась в сотрудничестве с IFE - CR, что еще раз подчеркивает мою приверженность успеху компании. Вы можете найти его ниже."
+        description: "В должности конструктора-механика в IFE-CR я играл ключевую роль в разработке инновационных продуктовых решений и новых моделей, специализируясь на дизайне дверных полотен. Сотрудничество лежит в основе моей работы, поскольку я взаимодействовал с различными отделами и уровнями внутри организации. Кроме того, я отвечал за разработку комплексной проектной документации и внесение изменений в дизайн, чтобы наши проекты были адаптируемыми. Кроме того, я вел и обновлял техническую документацию как для наших клиентов, так и для поставщиков. Примечательно, что моя дипломная работа проводилась в сотрудничестве с IFE - CR, что еще раз подчеркивает мою приверженность успеху компании. Вы можете найти его ниже."
+    },
+    {
+        id: 5,
+        title: "Technical Support Engineer",
+        years: 'Янв 2024 - В настоящее время',
+        company: 'Oracle',
+        description: ""
     },
 ]

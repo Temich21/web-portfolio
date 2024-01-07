@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '../../../node_modules/@fortawesome/react-fontaw
 import { skillsEN, skillsCZ, skillsRU } from '../../costants/skills'
 import { ISkills } from '../../models/ISkills'
 import Image from 'next/image'
-import foto from '@/public/jestjsIcon.png'
-import { faGit } from '@fortawesome/free-brands-svg-icons'
+import jestLogo from '@/public/jestjsIcon.png'
+import reduxLogo from '@/public/ReduxLogo.png'
+import queryLogo from '@/public/ReactQueryLogo.png'
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
 
@@ -43,28 +44,45 @@ export const Skills: React.FC = () => {
                         <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
                     </div>
                 ))}
-                <div className={styles.skillsRow}>
-                    <div className={`${styles.skill} ${activePath === 'skills' ? styles.showAnimate : ''}`} >
-                        <h3>Git</h3>
-                        <div className={styles.iconBox} >
-                            <FontAwesomeIcon className={styles.icon} icon={faGit} />
-                        </div>
-                        <p>{t('git')}</p>
-                        <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
+                <div className={`${styles.skill} ${activePath === 'skills' ? styles.showAnimate : ''}`}>
+                    <h3>Jest.js</h3>
+                    <div className={styles.iconBox} >
+                        <Image
+                            src={jestLogo}
+                            className={styles.jestImage}
+                            alt="Jest.js icon"
+                        />
                     </div>
-                    <div className={`${styles.skill} ${activePath === 'skills' ? styles.showAnimate : ''}`}>
-                        <h3>Jest.js</h3>
-                        <div className={styles.iconBox} >
-                            <Image
-                                src={foto}
-                                className={styles.jestImage}
-                                alt="Jest.js icon"
-                            />
-                        </div>
-                        <p>{t('jest')}</p>
-                        <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
-                    </div>
+                    <p>{t('jest')}</p>
+                    <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
                 </div>
+                <div className={`${styles.skill} ${activePath === 'skills' ? styles.showAnimate : ''}`}>
+                    <h3>Redux Toolkit</h3>
+                    <div className={styles.iconBox} >
+                        <Image
+                            src={reduxLogo}
+                            className={styles.reduxImage}
+                            alt="Redux icon"
+                        />
+                    </div>
+                    <p>{t('redux')}</p>
+                    <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
+                </div>
+                <div className={`${styles.skill} ${activePath === 'skills' ? styles.showAnimate : ''}`}>
+                    <h3>React / RTK Query</h3>
+                    <div className={styles.iconBox} >
+                        <Image
+                            src={queryLogo}
+                            className={styles.queryImage}
+                            alt="React Query icon"
+                        />
+                    </div>
+                    <p>{t('query')}</p>
+                    <span className={`${styles.animate} ${activePath === 'skills' ? styles.showAnimate : ''}`} ></span>
+                </div>
+                {/* <div className={styles.skillsRow}>
+                    
+                </div> */}
             </div>
         </section>
     )

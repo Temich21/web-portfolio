@@ -30,8 +30,9 @@
     "Skills": {
         "titleMe": "My",
         "title": "Skills",
-        "git": "Adept in using Git, a distributed version control system, to manage code repositories efficiently. Proficient in version control practices, including branching, merging, and resolving conflicts. Skilled in collaborating with teams on code projects, utilizing Git to track changes, maintain code history, and ensure codebase integrity.",
-        "jest": "Proficient in testing React applications using Jest, a popular JavaScript testing framework. Experienced in writing unit and integration tests to ensure code reliability and maintainability. Skilled in using React Testing Library to perform component-level testing, focusing on user interactions and behaviors. These testing skills contribute to the delivery of high-quality, bug-free applications."
+        "jest": "Proficient in testing React applications using Jest, a popular JavaScript testing framework. Experienced in writing unit and integration tests to ensure code reliability and maintainability. Skilled in using React Testing Library to perform component-level testing, focusing on user interactions and behaviors. These testing skills contribute to the delivery of high-quality, bug-free applications.",
+        "redux": "Skilled in using Redux Toolkit, a toolset for efficient Redux development. Proficient in simplifying Redux application building with its set of utilities that help write less code while achieving more functionality.",
+        "query": "Proficient in integrating RTK Query with React to enhance data fetching and caching in web applications. Skilled in using RTK Query for effective server-state management within React apps, leading to reduced boilerplate and enhanced performance. Experienced in constructing robust, data-driven interfaces with streamlined data synchronization, optimizing the overall functionality and user experience of React applications."
     },
     "Contact": {
         "title": "Contact",

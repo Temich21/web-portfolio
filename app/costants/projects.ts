@@ -27,22 +27,23 @@ export const projectsEN: IProjects[] = [
     },
     {
         id: 5,
+        title: "Next.js ToDo app",
+        description: 'I built a React-based to-do list app. This project, created using Next.js and Redux Toolkit, showcases my frontend development skills.',
+        link: 'https://github.com/Temich21/todoapp'
+    },
+    {
+        id: 6,
         title: "Telegram ChatGPT bot",
         description: 'I created a Telegram bot using Node.js and the Telegram API. It connects with Chat GPT for advanced natural language conversations and allows users to interact not only via normal messages, but also via voice messages on the Telegram platform.',
         link: 'https://github.com/Temich21/tgbot-gpt'
     },
     {
-        id: 6,
+        id: 7,
         title: "Alien Invasion",
         description: 'I created a 2D game using PyGame. Players control a spacecraft, fend off invading aliens, and score points. The game offers fast-paced action and entertainment.',
         link: 'https://github.com/Temich21/Alien-invasion'
     },
-    {
-        id: 7,
-        title: "React to do",
-        description: 'I built a React-based to-do list app with an interactive Pokemon slider. This project, created using Next.js and Redux Toolkit, showcases my frontend development skills for a company task.',
-        link: 'https://github.com/Temich21/CodingTest'
-    },
+
 ]
 
 export const projectsCZ: IProjects[] = [
@@ -72,21 +73,21 @@ export const projectsCZ: IProjects[] = [
     },
     {
         id: 5,
+        title: "Next.js ToDo app",
+        description: 'Vytvořil jsem aplikaci pro seznam úkolů založenou na Reactu. Tento projekt, vytvořený pomocí Next.js a Redux Toolkit, předvádí mé dovednosti vývoje frontendu.',
+        link: 'https://github.com/Temich21/todoapp'
+    },
+    {
+        id: 6,
         title: "Telegram ChatGPT bot",
         description: 'Vytvořil jsem telegramového bota pomocí Node.js a Telegram API. Propojuje se s Chat GPT pro pokročilé konverzace v přirozeném jazyce a umožňuje uživatelům komunikovat nejen prostřednictvím běžných zpráv, ale také prostřednictvím hlasových zpráv na platformě Telegram.',
         link: 'https://github.com/Temich21/tgbot-gpt'
     },
     {
-        id: 6,
+        id: 7,
         title: "Alien Invasion",
         description: 'Vytvořil jsem 2D hru pomocí PyGame. Hráči ovládají vesmírnou loď, odrážejí útočící mimozemšťany a získávají body. Hra nabízí rychlou akci a zábavu.',
         link: 'https://github.com/Temich21/Alien-invasion'
-    },
-    {
-        id: 7,
-        title: "React to do",
-        description: 'Vytvořil jsem aplikaci pro seznam úkolů založenou na Reactu s interaktivním posuvníkem Pokémon. Tento projekt, vytvořený pomocí Next.js a Redux Toolkit, předvádí mé dovednosti vývoje frontendu pro firemní úkol.',
-        link: 'https://github.com/Temich21/CodingTest'
     },
 ]
 
@@ -117,20 +118,20 @@ export const projectsRU: IProjects[] = [
     },
     {
         id: 5,
+        title: "Next.js ToDo app",
+        description: 'Я создал приложение списка дел на основе React. Этот проект, созданный с использованием Next.js и Redux Toolkit, демонстрирует мои навыки разработки внешнего интерфейса.',
+        link: 'https://github.com/Temich21/todoapp'
+    },
+    {
+        id: 6,
         title: "Telegram ChatGPT bot",
         description: 'Я создал бота Telegram, используя Node.js и API Telegram. Он подключается к Chat GPT для расширенного общения на естественном языке и позволяет пользователям взаимодействовать не только с помощью обычных сообщений, но и с помощью голосовых сообщений на платформе Telegram.',
         link: 'https://github.com/Temich21/tgbot-gpt'
     },
     {
-        id: 6,
+        id: 7,
         title: "Alien Invasion",
         description: 'Я создал 2D-игру, используя PyGame. Игроки управляют космическим кораблем, отбиваются от вторжения инопланетян и набирают очки. Игра предлагает динамичные действия и развлечения.',
         link: 'https://github.com/Temich21/Alien-invasion'
-    },
-    {
-        id: 7,
-        title: "React to do",
-        description: 'Я создал приложение списка дел на основе React с интерактивным ползунком Pokemon. Этот проект, созданный с использованием Next.js и Redux Toolkit, демонстрирует мои навыки разработки внешнего интерфейса для решения компании.',
-        link: 'https://github.com/Temich21/CodingTest'
     },
 ]
