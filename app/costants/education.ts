@@ -57,7 +57,7 @@ export const experienceEN: IExperience[] = [
         title: "Technical Support Engineer",
         years: 'Jan 2024 - Present',
         company: 'Oracle',
-        description: ""
+        description: "My job involves assisting clients and the team, solving problems, and improving JavaScript code. I actively debug new and existing code, propose efficient solutions to optimize work and enhance service quality. Additionally, my duties include supporting and integrating web services, working with RestAPI and SOAP requests, and executing SQL database queries."
     },
 ]
 
@@ -95,7 +95,7 @@ export const experienceCZ: IExperience[] = [
         title: "Technical Support Engineer",
         years: 'Leden 2024 - Současnost',
         company: 'Oracle',
-        description: ""
+        description: "Moje práce spočívá v poskytování pomoci klientům a týmu, řešení problémů a zlepšování kódu v JavaScriptu. Aktivně se věnuji ladění nového a stávajícího kódu, navrhuji efektivní řešení pro optimalizaci práce a zlepšení kvality služeb. Kromě toho patří do mých povinností podpora a integrace webových služeb, včetně práce s RestAPI a SOAP dotazy, a také provádění dotazů na SQL databáze. "
     },
 ]
 
@@ -133,6 +133,6 @@ export const experienceRU: IExperience[] = [
         title: "Technical Support Engineer",
         years: 'Янв 2024 - В настоящее время',
         company: 'Oracle',
-        description: ""
+        description: "Моя работа заключается в оказании помощи клиентам и команде, решении проблем и улучшении кода на JavaScript. Я активно занимаюсь отладкой нового и существующего кода, предлагаю эффективные решения для оптимизации работы и повышения качества обслуживания. Кроме того, в мои обязанности входит поддержка и интеграция веб-сервисов, включая работу с RestAPI и SOAP-запросами, а также выполнение запросов к SQL-базам данных."
     },
 ]

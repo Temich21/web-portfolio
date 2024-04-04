@@ -2,13 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDEkkdF4SAlW1IuamlceVS0EZZyLaHb1Zk",
-    authDomain: "portfolio-website-abe4a.firebaseapp.com",
-    projectId: "portfolio-website-abe4a",
-    storageBucket: "portfolio-website-abe4a.appspot.com",
-    messagingSenderId: "401437459396",
-    appId: "1:401437459396:web:80c98dac01ccbff7091a91",
-    measurementId: "G-VDYT2TH6GJ"
+  apiKey: "AIzaSyC1J9tTq6msbFqq_TIF-RWbbeL6CWelxRw",
+  authDomain: "web-portfolio-97ddf.firebaseapp.com",
+  projectId: "web-portfolio-97ddf",
+  storageBucket: "web-portfolio-97ddf.appspot.com",
+  messagingSenderId: "215539139274",
+  appId: "1:215539139274:web:e00d7f42dad07d2b6a2a33"
 };
 
 const app = initializeApp(firebaseConfig);

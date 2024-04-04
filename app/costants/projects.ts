@@ -8,6 +8,18 @@ export const projectsEN: IProjects[] = [
         link: 'https://github.com/Temich21/web-portfolio'
     },
     {
+        id: 8,
+        title: "ToDo App",
+        description: 'The web application, developed on the MERN stack, features an advanced authorization system with access and refresh tokens, allowing users to create both personal and group to-do lists. It includes a calendar to track all unfinished tasks and offers a website customization system for personalizing the user interface.',
+        link: 'https://github.com/Temich21/ToDo-Frontend'
+    },
+    {
+        id: 9,
+        title: "Shorten the link",
+        description: 'The web application consists of a backend and a frontend developed with the MERN stack, offering simple authorization functionality. Users can save their links, track the number of views, and create shortened versions of these links for easier distribution and interaction analysis.',
+        link: 'https://github.com/Temich21/shorten-the-link-frontend'
+    },
+    {
         id: 2,
         title: "D&D Generator",
         description: 'D&D Character Sheet Generator simplifies character creation. Users can input character details manually or complete a form. The server communicates with ChatGPT, which generates a character based on the input. The D&D Character Sheet Generator automates character creation, providing players with a hassle-free way to bring their D&D characters to life.',
@@ -43,7 +55,6 @@ export const projectsEN: IProjects[] = [
         description: 'I created a 2D game using PyGame. Players control a spacecraft, fend off invading aliens, and score points. The game offers fast-paced action and entertainment.',
         link: 'https://github.com/Temich21/Alien-invasion'
     },
-
 ]
 
 export const projectsCZ: IProjects[] = [
@@ -52,6 +63,18 @@ export const projectsCZ: IProjects[] = [
         title: "Portfolio Website",
         description: 'Web mého portfolia je dynamickou ukázkou mých dovedností a zkušeností jako frontend vývojáře. Vyznačuje se responzivním designem pro optimální zobrazení na všech zařízeních. Tato webová stránka odráží můj závazek k uživatelsky přívětivým a vizuálně přitažlivým webovým řešením a zároveň zdůrazňuje mou oddanost neustálému učení a zlepšování. Volně prozkoumávejte.',
         link: 'https://github.com/Temich21/web-portfolio'
+    },
+    {
+        id: 8,
+        title: "ToDo App",
+        description: 'Webová aplikace vyvinutá na technologickém stacku MERN nabízí pokročilý systém autorizace s využitím access a refresh tokenů, umožňující uživatelům vytvářet jak osobní, tak i skupinové úkolové seznamy. Aplikace zahrnuje kalendář pro sledování všech nedokončených úkolů a poskytuje systém nastavení webu pro personalizaci uživatelského rozhraní.',
+        link: 'https://github.com/Temich21/ToDo-Frontend'
+    },
+    {
+        id: 9,
+        title: "Shorten the link",
+        description: 'Webová aplikace se skládá z backendu a frontendu vyvinutých na technologickém stacku MERN a nabízí funkcionalitu jednoduché autorizace. Uživatelé mohou ukládat své odkazy, sledovat počet jejich zobrazení a vytvářet zkrácené verze těchto odkazů pro snadnější šíření a analýzu interakcí.',
+        link: 'https://github.com/Temich21/shorten-the-link-frontend'
     },
     {
         id: 2,
@@ -89,6 +112,7 @@ export const projectsCZ: IProjects[] = [
         description: 'Vytvořil jsem 2D hru pomocí PyGame. Hráči ovládají vesmírnou loď, odrážejí útočící mimozemšťany a získávají body. Hra nabízí rychlou akci a zábavu.',
         link: 'https://github.com/Temich21/Alien-invasion'
     },
+
 ]
 
 export const projectsRU: IProjects[] = [
@@ -97,6 +121,18 @@ export const projectsRU: IProjects[] = [
         title: "Portfolio Website",
         description: 'Мой веб-сайт-портфолио — это динамичная демонстрация моих навыков и опыта как фронтенд-разработчика. Он имеет адаптивный дизайн для оптимального просмотра на всех устройствах. Этот веб-сайт отражает мою приверженность удобным и визуально привлекательным веб-решениям, одновременно подчеркивая мою приверженность постоянному обучению и совершенствованию. Будьте свободны в исследовании.',
         link: 'https://github.com/Temich21/web-portfolio'
+    },
+    {
+        id: 8,
+        title: "ToDo App",
+        description: 'Веб приложение на стеке мерн с продвинутой авторизация access и refresh токена, в которой вы можете сохранять как личные так и создавать групповые списки дел. Календарём где вы можете отслеживать все незаконченные дела. И системой настройки сайта.',
+        link: 'https://github.com/Temich21/ToDo-Frontend'
+    },
+    {
+        id: 9,
+        title: "Shorten the link",
+        description: 'Веб-приложение состоит из бэкенда и фронтенда, разработанных на стеке MERN, и предлагает функционал простой авторизации. Пользователи могут сохранять свои ссылки, отслеживать количество их просмотров и создавать сокращённые версии этих ссылок для удобства распространения и анализа взаимодействия.',
+        link: 'https://github.com/Temich21/shorten-the-link-frontend'
     },
     {
         id: 2,
@@ -134,4 +170,5 @@ export const projectsRU: IProjects[] = [
         description: 'Я создал 2D-игру, используя PyGame. Игроки управляют космическим кораблем, отбиваются от вторжения инопланетян и набирают очки. Игра предлагает динамичные действия и развлечения.',
         link: 'https://github.com/Temich21/Alien-invasion'
     },
+
 ]
